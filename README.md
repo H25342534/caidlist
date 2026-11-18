@@ -1,4 +1,4 @@
-# 命令助手ID表生成工具
+ # 命令助手ID表生成工具
 ## 简介
 命令助手作者 [ProjectXero](https://github.com/XeroAlpha) 使用此工具生成ID表。
 
