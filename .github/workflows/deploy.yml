@@ -81,3 +81,8 @@ jobs:
       if: ${{ steps.pages_setup.outcome == 'success' && github.repository == 'XeroAlpha/caidlist' }}
       run: |
         curl -sS -H "Title: ${{ secrets.NTFY_TITLE }}" -d "${{ steps.pages_upload.outputs.artifact_id }}" ${{ secrets.NTFY_URL }} >/dev/null 2>&1
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+       name: caidlist-output
+       path: ./
